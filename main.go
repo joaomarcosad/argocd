@@ -5,8 +5,8 @@ import "net/http"
 func main() {
 
 	http.HandleFunc("/", func(w http.ResponseWriter, r *http.Request) {
-		w.Write([]byte("<h1>Hello World</h1>"))
+		w.Write([]byte("<h1>TESTE LAB ARGO CD/h1>"))
 	})
-	http.ListenAndServe(":8080", nil)
+	http.ListenAndServe(":8081", nil)
 
 }
