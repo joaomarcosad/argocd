@@ -1,0 +1,23 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: goapp-lab
+spec:
+  replicas: 5
+  selector:
+    matchLabels:
+      app: goapp-lab
+  template:
+    metadata:
+      labels:
+        app: goapp-lab
+    spec:
+      containers:
+      - name: goapp-lab
+        image: joaomarcosad/goapp:1.0
+        resources:
+          limits:
+            memory: "128Mi"
+            cpu: "500m"
+        ports:
+        - containerPort: 8080

@@ -1,0 +1,17 @@
+name: CD
+on:
+  push:
+    branches: [main]
+jobs:
+  build: 
+    name: Build
+    runs-on: ubuntu-latest
+    steps:
+        - name: checkout
+          uses: actions/checkout@v2
+
+        - name: build image and push docker hub
+          uses: docker/build-push-actions@v1.1.0
+          with:
+            username: joaomarcos.ad@gmail.com
+            password: ${{ secrets.DOCKER_PASSWORD }}
