@@ -39,6 +39,8 @@ jobs:
 
       - name: commit
         run: |
+          git config --global user.email "Deploy@joaolab.com"
+          git config --global user.name "Deploy"
           git commit -am "Alteração de TAG"
 
       - name: push
