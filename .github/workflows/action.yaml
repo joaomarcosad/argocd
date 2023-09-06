@@ -44,7 +44,12 @@ jobs:
           git commit -am "Alteração de TAG"
 
       - name: push
-        uses: ad-m/github-push-action@main
+        uses: ad-m/github-push-action@master
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          
+      
+
         
 
 
