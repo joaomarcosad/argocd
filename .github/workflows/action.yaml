@@ -39,7 +39,11 @@ jobs:
 
       - name: commit
         run: |
-        git commit -am "Alteração de TAG"
+          git commit -am "Alteração de TAG"
+
+      - name: push
+        uses: ad-m/github-push-action@master
+        
 
 
     
