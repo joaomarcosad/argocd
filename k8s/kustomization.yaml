@@ -9,4 +9,4 @@ namespace: goapp
 images:
 - name: goapp
   newName: joaomarcosad/goapp
-  newTag: 143d5431933fa4cbb9766765f81bc8345286e65b
+  newTag: 1f805a2f977cd9fda95412fd6c12ab3c5833a808
