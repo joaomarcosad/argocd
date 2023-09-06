@@ -1,12 +1,12 @@
 apiVersion: kustomize.config.k8s.io/v1beta1
 kind: Kustomization
 resources:
-  - deployment.yaml
-  - service.yaml
+- deployment.yaml
+- service.yaml
 
 namespace: goapp
 
 images:
-  - name: goapp 
-    newName: goapp
-    newTag: "1.0"
+- name: goapp
+  newName: joaomarcosad/goapp
+  newTag: cfaf3023c8b7e93f7c257e08b79f6ea789e0c20d
