@@ -13,5 +13,7 @@ jobs:
         - name: build image and push docker hub
           uses: docker/build-push-actions@v1.1.0
           with:
-            username: joaomarcos.ad@gmail.com
+            username: joaomarcosad
             password: ${{ secrets.DOCKER_PASSWORD }}
+            repository: joaomarcosad/goapp
+            tags: ${{ github.sha }}, latest
