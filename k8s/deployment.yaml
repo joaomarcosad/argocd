@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
       - name: goapp-lab
-        image: joaomarcosad/goapp
+        image: joaomarcosad/goapp:latest
         resources:
           limits:
             memory: "128Mi"
